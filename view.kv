@@ -4,26 +4,37 @@
     orientation: 'vertical'
     spacing: 25
     padding: 20
-
-    Label:
+    
+Label:
         text: 'Enter your bill amount below: '
 
-    TextInput:
+TextInput:
         hint_text: "$"
         on_text: root.bill_input = self.text
-
-    Label:
+    
+Label:
         text: root.tip_output
+    
 
-    Button:
+Label:
+        text: 'Enter number of people: '
+
+TextInput:
+        hint_text: "Number of people"
+        on_text: root.num_people_input = self.text
+    
+Label:
+        text: root.split_output
+
+Button:
         text: 'Calculate 15% Tip'
         on_release: root.btn_click_calc_tip(15)
     
-    Button:
+Button:
         text: 'Calculate 20% Tip'
         on_release: root.btn_click_calc_tip(20)
     
-    Button:
+Button:
         text: 'Calculate 25% Tip'
         on_release: root.btn_click_calc_tip(25)
 
