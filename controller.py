@@ -4,7 +4,7 @@ from kivy.properties import StringProperty
 from model import TipModel
 
 Builder.load_file('view.kv')
-
+ 
 class TipCalculator(BoxLayout):
     bill_input = StringProperty()
     tip_output = StringProperty()
